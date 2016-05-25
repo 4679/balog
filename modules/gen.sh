@@ -53,6 +53,8 @@ while [[ $p -lt $page_index ]]; do
     gen_page $page_file_name
 done
 
+cp -r $theme_path/static/* $dest_path/
+
 echo "[$(date +%T)] "-----------------------
 echo "[$(date +%T)] "一共生成了${i}篇博客 $(ls -l $content_path/page | grep ".md" | wc -l)个页面
 }
