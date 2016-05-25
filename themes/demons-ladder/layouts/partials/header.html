@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="{{.Site.LanguageCode}}">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="UTF-8">
+  <title>
+      {{ .Title }} | {{ .Site.Title }}
+  </title>
+  <meta name="theme-color" content="#262626">
+
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1,initial-scale=1">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="shortcut icon" href="data:image/x-icon;base64,R0lGODlhEAAQAPEAAAAAAACE/wAAAAAAACH5BAlkAAIAIf8LTkVUU0NBUEUyLjADAQAAACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAIgiAIgiAIgiAIghAEgiAIgiAQCAQCgUAgCAQEAoFAIBAIBAKBQCAQBAICgUAgEAgEAoFAIBAIAgGBQCAQCAQCgUAgEAgEgYBAICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAQEBAQEBAgICAQECAgICAgEBAQEBAQICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAAh+QQJZAACACwAAAAAEAAQAAAC55QkIiIiIoQQQgghhBBCCCEIgiAIQhAIgiAIgiAIgiAIghAEgiAIgiAQCAQCgUAgCAQEAoFAIBAIBAKBQCAQBAICgUAgEAgEAoFAIBAIAgGBQCAQCAQCgUAgEAgEgYBAICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAQECAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgQIAAAQIKAAA7" type="image/x-icon">
+
+  <!-- HTTPS Canonical URL
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="canonical" href="{{ .Permalink }}"/>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/css/sanitize.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/highlight_railscasts.css">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/custom.css">
+  
+  <!-- RSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="{{ .Site.BaseURL }}index.xml" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+  <link href="{{ .Site.BaseURL }}index.xml" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+
+</head>
+
+
+
+<body>
+<div class="container">
+
+  <!-- Header Section Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header role="banner">
+    <div class="row gutters">
+      <div id="site-title" class="col span_6">
+        <h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+        <h2>{{ .Site.Params.subtitle }}</h2>
+      </div>
+      <div id="social" class="col span_6">
+        <ul>
+          <li><a href="{{ .Site.Params.about }}" target="_blank">About</a></li>
+          <li><a href="{{ .Site.Params.github }}" target="_blank">GitHub</a></li>
+          <li><a href="{{ .Site.Params.weibo }}" target="_blank">Weibo</a></li>
+          <li><a href="{{ .Site.Params.links }}" target="_blank">Links</a></li>
+          <li><a href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml" target="_blank">RSS</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
